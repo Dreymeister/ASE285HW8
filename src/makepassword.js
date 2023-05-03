@@ -1,3 +1,4 @@
+//understood
 'use strict'
 const fs = require('fs');
 const {readFile, writeFile, hash} = require('./utility')
