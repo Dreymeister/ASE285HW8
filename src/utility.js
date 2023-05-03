@@ -1,4 +1,4 @@
-//understood
+//Done
 'use strict'
 
 const fs = require('fs');
@@ -10,7 +10,7 @@ function readFile(fileName) {
     }
     try {
         var text = fs.readFileSync(fileName).toString('utf-8');
-        var textByLine = text.split("\n");
+        var textByLine = text.split("\r\n"); //added /r here
         return textByLine;
     } catch (err) {
         console.log(err)
@@ -19,7 +19,7 @@ function readFile(fileName) {
 
 function writeFile(ar, fileName) {
     try {
-        var res = ar.join("\n")
+        var res = ar.join("\r\n") //implemented /r here has well, /n 
         fs.writeFileSync(fileName, res)
     } catch (err) {
         console.log(err)
@@ -27,7 +27,7 @@ function writeFile(ar, fileName) {
 }
 
 function hash(input) {
-    return createHash('sha256').update(input).digest('hex'); // never use md5
+    return createHash('sha256').update(input).digest('hex'); // never use md5 //md5 not used
 }
 
 module.exports = {readFile, writeFile, hash};
