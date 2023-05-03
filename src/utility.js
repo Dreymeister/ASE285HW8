@@ -1,4 +1,4 @@
-//Done
+//Done //three small changes to initial code implmented
 'use strict'
 
 const fs = require('fs');
