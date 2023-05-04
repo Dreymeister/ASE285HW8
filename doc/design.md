@@ -2,10 +2,10 @@
 
 ## User Stories
 Requirement 1:
-    As a user, I would like my password to incoperate encryption purposes, so that only myself and the individuals I would allow my password & name are able to use my login credientials.
+    As a user, I want to create and implement the encryption between a plain text password file and be able to decyrpt the text file when needed. The file should be easily accessible when encryption and decyrption are needed.
 
 Requirement 2:
-    As a user, I want the password and name given to the system to match original input, so that I can use my credentials to login and access or restrict my account.
+    As a user, I want the password and name given to the system to match original input, so that I can use my credentials to login and access or restrict my account, I want to also store these files so that I can encrypt and decypt them locally.
 
 ## Integrated Design
 
